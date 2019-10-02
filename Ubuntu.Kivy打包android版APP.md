@@ -13,3 +13,8 @@ buildozer init
 3.Debug生成APK文件  
 
 buildozer android debug deploy run  
+
+
+
+ Aidl not found, please install it  
+~/./.buildozer/android/platform/android-sdk/tools/bin/sdkmanager "build-tools;28.0.0"  
