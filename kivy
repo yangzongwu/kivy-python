@@ -1,0 +1,73 @@
+安装pip3:
+sudo apt-get install python3-pip
+
+
+
+安装依赖包
+sudo apt-get install -y \
+sudo apt-get install python3-pip
+sudo apt-get install build-essential
+sudo apt-get install git
+sudo apt-get install python3
+sudo apt-get install python3-dev
+sudo apt-get install ffmpeg
+sudo apt-get install libsdl2-dev
+sudo apt-get install libsdl2-image-dev
+sudo apt-get install libsdl2-mixer-dev
+sudo apt-get install libsdl2-ttf-dev
+sudo apt-get install libportmidi-dev
+sudo apt-get install libswscale-dev
+sudo apt-get install libavformat-dev
+sudo apt-get install libavcodec-dev
+sudo apt-get install zlib1g-dev
+
+# Install gstreamer for audio, video (optional)
+sudo apt-get install -y \
+    libgstreamer1.0 \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good
+
+
+
+Add one of the PPAs as you prefer
+stable builds:	$ sudo add-apt-repository ppa:kivy-team/kivy
+nightly builds:	$ sudo add-apt-repository ppa:kivy-team/kivy-daily
+Update your package list using your package manager
+$ sudo apt-get update
+Install Kivy
+Python2 - python-kivy:
+ 	$ sudo apt-get install python-kivy
+Python3 - python3-kivy:
+ 	$ sudo apt-get install python3-kivy
+optionally the examples - kivy-examples:
+ 	$ sudo apt-get install python-kivy-examples
+
+
+
+pip install --upgrade buildozer
+
+sudo apt update
+sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5
+pip3 install --user --upgrade cython virtualenv  # the --user should be removed if you do this in a venv
+
+# add the following line at the end of your ~/.bashrc file
+export PATH=$PATH:~/.local/bin/
+
+
+buildozer init
+buildozer -v android debug
+buildozer android debug deploy run
+
+
+
+issue:
+1:aidl not found please install it
+sudo apt-get update
+sudo apt-get install build-essential
+sudo apt-get install libstdc++6
+sudo apt-get install aidl 
+sudo apt-get update
+
+
+2.no module named _ctypes
+sudo apt install libffi-dev
