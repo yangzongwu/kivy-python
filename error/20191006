@@ -1,0 +1,378 @@
+yzw@yzw-virtual-machine:~/Desktop/Test$ buildozer android clean
+
+# Ensure build layout
+No buildozer.spec found in the current directory. Abandon.
+yzw@yzw-virtual-machine:~/Desktop/Test$ 
+yzw@yzw-virtual-machine:~/Desktop/Test$ buildozer android clean
+# Ensure build layout
+No buildozer.spec found in the current directory. Abandon.
+yzw@yzw-virtual-machine:~/Desktop/Test$ buildozer init
+File buildozer.spec created, ready to customize!
+yzw@yzw-virtual-machine:~/Desktop/Test$ buildozer -v android debug
+# Check configuration tokens
+# Ensure build layout
+# Create directory /home/yzw/Desktop/Test/bin
+# Check configuration tokens
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+Debian 'dpkg' package management program version 1.19.0.5 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /home/yzw/.local/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool
+# Install platform
+# Run '/usr/bin/python3 -m pip install -q --user \'appdirs\' \'colorama>=0.3.3\' \'jinja2\' \'six\' \'enum34; python_version<"3.4"\' \'sh>=1.10; sys_platform!="nt"\' \'pep517\' \'pytoml\' \'virtualenv\''
+# Cwd None
+# Apache ANT found at /home/yzw/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/yzw/.buildozer/android/platform/android-sdk
+# Android NDK found at /home/yzw/.buildozer/android/platform/android-ndk-r17c
+# Check application requirements
+# Check garden requirements
+# Compile platform
+# Run '/usr/bin/python3 -m pythonforandroid.toolchain create --dist_name=myapp --bootstrap=sdl2 --requirements=python3,kivy --arch armeabi-v7a --copy-libs --color=always --storage-dir="/home/yzw/Desktop/Test/.buildozer/android/platform/build" --ndk-api=21'
+# Cwd /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Will compile for the following archs: armeabi-v7a
+[INFO]:    Found Android API target in $ANDROIDAPI: 27
+[INFO]:    Available Android APIs are (27)
+[INFO]:    Requested API target 27 is available, continuing.
+[INFO]:    Found NDK dir in $ANDROIDNDK: /home/yzw/.buildozer/android/platform/android-ndk-r17c
+[INFO]:    Found NDK version 17c
+[INFO]:    Getting NDK API version (i.e. minimum supported API) from user argument
+[INFO]:    Found virtualenv at /home/yzw/.local/bin/virtualenv
+[INFO]:    ccache is missing, the build will not be optimized in the future.
+[INFO]:    Found the following toolchain versions: ['4.9']
+[INFO]:    Picking the latest gcc toolchain, here 4.9
+[INFO]:    No existing dists meet the given requirements!
+[INFO]:    No dist exists that meets your requirements, so one will be built.
+[INFO]:    Found a single valid recipe set: ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'six', 'pyjnius', 'android', 'kivy']
+[INFO]:    The selected bootstrap is sdl2
+[INFO]:    # Creating dist with sdl2 bootstrap
+[INFO]:    Dist will have name myapp and requirements (python3, kivy)
+[INFO]:    Dist contains the following requirements as recipes: ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'six', 'pyjnius', 'android', 'kivy']
+[INFO]:    Dist will also contain modules () installed from pip
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/bootstrap_builds/sdl2-python3
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Recipe build order is ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'six', 'pyjnius', 'android', 'kivy']
+[INFO]:    # Downloading recipes 
+[INFO]:    Downloading hostpython3
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 57 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/hostpython3
+[INFO]:    -> running basename https://www.python.or...(and 35 more)
+[INFO]:    hostpython3 download already cached, skipping                      
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading libffi
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 52 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/libffi
+[INFO]:    -> running basename https://github.com/li...(and 33 more)
+[INFO]:    libffi download already cached, skipping                           
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading openssl
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 53 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/openssl
+[INFO]:    -> running basename https://www.openssl.o...(and 30 more)
+[INFO]:    openssl download already cached, skipping                          
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading sdl2_image
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 56 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/sdl2_image
+[INFO]:    -> running basename https://www.libsdl.o...(and 53 more)
+[INFO]:    sdl2_image download already cached, skipping                       
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading sdl2_mixer
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 56 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/sdl2_mixer
+[INFO]:    -> running basename https://www.libsdl.o...(and 53 more)
+[INFO]:    sdl2_mixer download already cached, skipping                       
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading sdl2_ttf
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 54 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/sdl2_ttf
+[INFO]:    -> running basename https://www.libsdl.or...(and 49 more)
+[INFO]:    sdl2_ttf download already cached, skipping                         
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading sqlite3
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 53 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/sqlite3
+[INFO]:    -> running basename https://www.sqlite.or...(and 38 more)
+[INFO]:    sqlite3 download already cached, skipping                          
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading python3
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 53 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/python3
+[INFO]:    -> running basename https://www.python.or...(and 35 more)
+[INFO]:    python3 download already cached, skipping                          
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading sdl2
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Tes...(and 49 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/sdl2
+[INFO]:    -> running basename https://www.libsdl.or...(and 27 more)
+[INFO]:    sdl2 download already cached, skipping                             
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading setuptools
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 56 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/setuptools
+[INFO]:    -> running basename https://pypi.python....(and 54 more)
+[INFO]:    setuptools download already cached, skipping                       
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading six
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Tes...(and 48 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/six
+[INFO]:    -> running basename https://pypi.python.o...(and 42 more)
+[INFO]:    six download already cached, skipping                              
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading pyjnius
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Te...(and 53 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/pyjnius
+[INFO]:    -> running basename https://github.com/ki...(and 30 more)
+[INFO]:    pyjnius download already cached, skipping                          
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Downloading android
+[INFO]:    Skipping android download as no URL is set
+[INFO]:    Downloading kivy
+[INFO]:    -> running mkdir -p /home/yzw/Desktop/Tes...(and 49 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/packages/kivy
+[INFO]:    -> running basename https://github.com/ki...(and 26 more)
+[INFO]:    kivy download already cached, skipping                             
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    # Building all recipes for arch armeabi-v7a
+[INFO]:    # Unpacking recipes
+[INFO]:    Unpacking hostpython3 for armeabi-v7a
+[INFO]:    -> running basename https://www.python.or...(and 35 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/hostpython3/desktop
+[INFO]:    hostpython3 is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking libffi for armeabi-v7a
+[INFO]:    -> running basename https://github.com/li...(and 33 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/libffi/armeabi-v7a__ndk_target_21
+[INFO]:    libffi is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking openssl for armeabi-v7a
+[INFO]:    -> running basename https://www.openssl.o...(and 30 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/openssl/armeabi-v7a__ndk_target_21
+[INFO]:    openssl is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking sdl2_image for armeabi-v7a
+[INFO]:    -> running basename https://www.libsdl.o...(and 53 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/bootstrap_builds/sdl2-python3/jni
+[INFO]:    sdl2_image is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking sdl2_mixer for armeabi-v7a
+[INFO]:    -> running basename https://www.libsdl.o...(and 53 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/bootstrap_builds/sdl2-python3/jni
+[INFO]:    sdl2_mixer is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking sdl2_ttf for armeabi-v7a
+[INFO]:    -> running basename https://www.libsdl.or...(and 49 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/bootstrap_builds/sdl2-python3/jni
+[INFO]:    sdl2_ttf is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking sqlite3 for armeabi-v7a
+[INFO]:    -> running basename https://www.sqlite.or...(and 38 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/sqlite3/armeabi-v7a__ndk_target_21
+[INFO]:    sqlite3 is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking python3 for armeabi-v7a
+[INFO]:    -> running basename https://www.python.or...(and 35 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21
+[INFO]:    python3 is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking sdl2 for armeabi-v7a
+[INFO]:    -> running basename https://www.libsdl.or...(and 27 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/bootstrap_builds/sdl2-python3/jni
+[INFO]:    sdl2 is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking setuptools for armeabi-v7a
+[INFO]:    -> running basename https://pypi.python....(and 54 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21
+[INFO]:    setuptools is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking six for armeabi-v7a
+[INFO]:    -> running basename https://pypi.python.o...(and 42 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/six-python3/armeabi-v7a__ndk_target_21
+[INFO]:    six is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Unpacking pyjnius for armeabi-v7a
+[INFO]:    -> running basename https://github.com/ki...(and 30 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/pyjnius-python3-sdl2/armeabi-v7a__ndk_target_21
+[INFO]:    pyjnius is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    -> running rm -rf /home/yzw/Desktop/Test...(and 109 more)
+[INFO]:    -> running cp -a /home/yzw/Desktop/Test/...(and 215 more)
+[INFO]:    Unpacking kivy for armeabi-v7a
+[INFO]:    -> running basename https://github.com/ki...(and 26 more)
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/kivy-python3/armeabi-v7a__ndk_target_21
+[INFO]:    kivy is already unpacked, skipping
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    # Prebuilding recipes
+[INFO]:    Prebuilding hostpython3 for armeabi-v7a
+[INFO]:    hostpython3 has no prebuild_armeabi_v7a, skipping
+[INFO]:    Prebuilding libffi for armeabi-v7a
+[INFO]:    libffi has no prebuild_armeabi_v7a, skipping
+[INFO]:    Applying patches for libffi[armeabi-v7a]
+[INFO]:    libffi already patched, skipping
+[INFO]:    Prebuilding openssl for armeabi-v7a
+[INFO]:    openssl has no prebuild_armeabi_v7a, skipping
+[INFO]:    Prebuilding sdl2_image for armeabi-v7a
+[INFO]:    sdl2_image has no prebuild_armeabi_v7a, skipping
+[INFO]:    Applying patches for sdl2_image[armeabi-v7a]
+[INFO]:    sdl2_image already patched, skipping
+[INFO]:    Prebuilding sdl2_mixer for armeabi-v7a
+[INFO]:    sdl2_mixer has no prebuild_armeabi_v7a, skipping
+[INFO]:    Applying patches for sdl2_mixer[armeabi-v7a]
+[INFO]:    sdl2_mixer already patched, skipping
+[INFO]:    Prebuilding sdl2_ttf for armeabi-v7a
+[INFO]:    sdl2_ttf has no prebuild_armeabi_v7a, skipping
+[INFO]:    Prebuilding sqlite3 for armeabi-v7a
+[INFO]:    sqlite3 has no prebuild_armeabi_v7a, skipping
+[INFO]:    Prebuilding python3 for armeabi-v7a
+[INFO]:    python3 has no prebuild_armeabi_v7a, skipping
+[INFO]:    Applying patches for python3[armeabi-v7a]
+[INFO]:    python3 already patched, skipping
+[INFO]:    Prebuilding sdl2 for armeabi-v7a
+[INFO]:    sdl2 has no prebuild_armeabi_v7a, skipping
+[INFO]:    Prebuilding setuptools for armeabi-v7a
+[INFO]:    setuptools has no prebuild_armeabi_v7a, skipping
+[INFO]:    Prebuilding six for armeabi-v7a
+[INFO]:    six has no prebuild_armeabi_v7a, skipping
+[INFO]:    Prebuilding pyjnius for armeabi-v7a
+[INFO]:    pyjnius has no prebuild_armeabi_v7a, skipping
+[INFO]:    Applying patches for pyjnius[armeabi-v7a]
+[INFO]:    pyjnius already patched, skipping
+[INFO]:    Prebuilding android for armeabi-v7a
+[INFO]:    android has no prebuild_armeabi_v7a, skipping
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/android-python3-sdl2/armeabi-v7a__ndk_target_21/android
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Prebuilding kivy for armeabi-v7a
+[INFO]:    kivy has no prebuild_armeabi_v7a, skipping
+[INFO]:    # Building recipes
+[INFO]:    Building hostpython3 for armeabi-v7a
+[INFO]:    Skipping hostpython3 (3.7.1) build, as it has already been completed
+[INFO]:    Building libffi for armeabi-v7a
+[INFO]:    libffi said it is already built, skipping
+[INFO]:    Building openssl for armeabi-v7a
+[INFO]:    openssl said it is already built, skipping
+[INFO]:    Building sdl2_image for armeabi-v7a
+[INFO]:    Building sdl2_mixer for armeabi-v7a
+[INFO]:    Building sdl2_ttf for armeabi-v7a
+[INFO]:    Building sqlite3 for armeabi-v7a
+[INFO]:    sqlite3 said it is already built, skipping
+[INFO]:    Building python3 for armeabi-v7a
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/python3-libffi-openssl-sqlite3/armeabi-v7a__ndk_target_21/python3/android-build
+[WARNING]: Doing some hacky stuff to link properly
+[INFO]:    -> running cp /home/yzw/.buildozer/andro...(and 83 more)
+[INFO]:    -> running cp /home/yzw/.buildozer/andro...(and 81 more)
+[WARNING]: lld not found, linking without it. Consider installing lld if linker errors occur.
+[INFO]:    Activating flags for sqlite3
+[INFO]:    Activating flags for libffi
+[INFO]:    Activating flags for openssl
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Building sdl2 for armeabi-v7a
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/bootstrap_builds/sdl2-python3/jni
+[INFO]:    -> running ndk-build V=1
+[INFO]:    <- directory context /home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android
+[INFO]:    Building setuptools for armeabi-v7a
+[INFO]:    setuptools apparently isn't already in site-packages
+[INFO]:    Installing setuptools into site-packages
+[INFO]:    -> directory context /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21/setuptools
+[INFO]:    -> running python setup.py install -O2 -...(and 106 more)
+Exception in thread background thread for pid 57350:                          
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yzw/.local/lib/python3.6/site-packages/sh.py", line 1540, in wrap
+    fn(*args, **kwargs)
+  File "/home/yzw/.local/lib/python3.6/site-packages/sh.py", line 2459, in background_thread
+    handle_exit_code(exit_code)
+  File "/home/yzw/.local/lib/python3.6/site-packages/sh.py", line 2157, in fn
+    return self.command.handle_command_exit_code(exit_code)
+  File "/home/yzw/.local/lib/python3.6/site-packages/sh.py", line 815, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_1: 
+
+  RAN: /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/hostpython3/desktop/hostpython3/native-build/python setup.py install -O2 --root=/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/python-installs/myapp --install-lib=.
+
+  STDOUT:
+Traceback (most recent call last):
+  File "setup.py", line 11, in <module>
+    import setuptools
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21/setuptools/setuptools/__init__.py", line 20, in <module>
+    from setuptools.dist import Distribution, Feature
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21/setuptools/setuptools/dist.py", line 36, in <module>
+    from setuptools import windows_support
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21/setuptools/setuptools/windows_support.py", line 2, in <module>
+    import ctypes
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/hostpython3/desktop/hostpython3/Lib/ctypes/__init__.py", line 7, in <module>
+    from _ctypes import Union, Structure, Array
+ModuleNotFoundError: No module named '_ctypes'
+
+
+  STDERR:
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 1192, in <module>
+    main()
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/entrypoints.py", line 18, in main
+    ToolchainCL()
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 668, in __init__
+    getattr(self, args.subparser_name.replace('-', '_'))(args)
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 153, in wrapper_func
+    build_dist_from_args(ctx, dist, args)
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 206, in build_dist_from_args
+    args, "ignore_setup_py", False
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/build.py", line 577, in build_recipes
+    recipe.build_arch(arch)
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/recipe.py", line 844, in build_arch
+    self.install_python_package(arch)
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/recipe.py", line 863, in install_python_package
+    _env=hpenv, *self.setup_extra_args)
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/python-for-android/pythonforandroid/logger.py", line 180, in shprint
+    for line in output:
+  File "/home/yzw/.local/lib/python3.6/site-packages/sh.py", line 863, in next
+    self.wait()
+  File "/home/yzw/.local/lib/python3.6/site-packages/sh.py", line 792, in wait
+    self.handle_command_exit_code(exit_code)
+  File "/home/yzw/.local/lib/python3.6/site-packages/sh.py", line 815, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_1: 
+
+  RAN: /home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/hostpython3/desktop/hostpython3/native-build/python setup.py install -O2 --root=/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/python-installs/myapp --install-lib=.
+
+  STDOUT:
+Traceback (most recent call last):
+  File "setup.py", line 11, in <module>
+    import setuptools
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21/setuptools/setuptools/__init__.py", line 20, in <module>
+    from setuptools.dist import Distribution, Feature
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21/setuptools/setuptools/dist.py", line 36, in <module>
+    from setuptools import windows_support
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/setuptools-python3/armeabi-v7a__ndk_target_21/setuptools/setuptools/windows_support.py", line 2, in <module>
+    import ctypes
+  File "/home/yzw/Desktop/Test/.buildozer/android/platform/build/build/other_builds/hostpython3/desktop/hostpython3/Lib/ctypes/__init__.py", line 7, in <module>
+    from _ctypes import Union, Structure, Array
+ModuleNotFoundError: No module named '_ctypes'
+
+
+  STDERR:
+
+# Command failed: /usr/bin/python3 -m pythonforandroid.toolchain create --dist_name=myapp --bootstrap=sdl2 --requirements=python3,kivy --arch armeabi-v7a --copy-libs --color=always --storage-dir="/home/yzw/Desktop/Test/.buildozer/android/platform/build" --ndk-api=21
+# 
+# Buildozer failed to execute the last command
+# The error might be hidden in the log above this error
+# Please read the full log, and search for it before
+# raising an issue with buildozer itself.
+# In case of a bug report, please add a full log with log_level = 2
