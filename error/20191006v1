@@ -1,0 +1,6 @@
+yzw@yzw-virtual-machine:~/Desktop/Test$ python3
+Python 3.6.8 (default, Aug 20 2019, 17:12:48) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import _ctypes
+>>> 
