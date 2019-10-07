@@ -27,12 +27,18 @@ Make sure to set KIVY_VIDEO=ffpyplayer env variable before running the app. Only
 
 
 Add one of the PPAs as you prefer  
-stable builds:	  
-``` $ sudo add-apt-repository ppa:kivy-team/kivy``` 
-nightly builds:	  
-``` $ sudo add-apt-repository ppa:kivy-team/kivy-daily``` 
-Update your package list using your package manager  
-``` $ sudo apt-get update``` 
+stable builds:	    
+``` 
+$ sudo add-apt-repository ppa:kivy-team/kivy
+``` 
+nightly builds:	    
+``` 
+$ sudo add-apt-repository ppa:kivy-team/kivy-daily
+``` 
+Update your package list using your package manager    
+``` 
+$ sudo apt-get update
+``` 
 
 ### Install Kivy  
 
