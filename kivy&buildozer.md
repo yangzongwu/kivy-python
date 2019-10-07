@@ -44,15 +44,15 @@ $ sudo apt-get update
 
 Python2 - python-kivy:  
 ``` 
- 	$ sudo apt-get install python-kivy
+$ sudo apt-get install python-kivy
 ``` 
 Python3 - python3-kivy:
 ``` 
- 	$ sudo apt-get install python3-kivy
+$ sudo apt-get install python3-kivy
 ``` 
 optionally the gallery of Examples - kivy-examples:
 ``` 
- 	$ sudo apt-get install kivy-examples
+$ sudo apt-get install kivy-examples
 ```
 
 # step3:  buildozer
